@@ -1,8 +1,8 @@
  version: 0.0
  os: linux
  files: 
-   - source: /index.html
-     destination: /var/www/html/
+   - source: https://github.com/ManpraXSoftware/edx-platform/tree/Subodha/juniper.allfiles
+     destination: /home/ubuntu/edx/pipeline
  hooks:
     BeforeInstall:
       - location: scripts/install_dependencies
@@ -11,3 +11,4 @@
       - location: scripts/start_server
         timeout: 300
         runas: root
+        
